@@ -1,0 +1,12 @@
+test via chatGPTo et claude 3.5 sonnet le jeu de snake avec auto apprentissage:
+
+=>genetic: resultat mauvais mais pas nul
+
+=>dqn: semble divergé au bout de qq milliers de partie
+
+=>ppo: pas mieux voir pire que dqn
+
+=>q-learning: simple mais efficace: par contre il faut beaucoup d'essaie pour trouver les bons hyperparameters
+ et que mettre dans getState (utilisation de epsilon décroissant)
+ il apprends parfaitement et la seule limite c'est qu'il ne peut pas anticiper qu'il va se retrouver coincé par sa propre queue puisqu'il n'évite les murs et sa queue qu'un coup à l'avance...
+ max score=55 (après 300 parties seulement !) soit 13% de l'espace des 400 cases ! Je pense que c'est impossible à dépasser pour cette algo actuel.
